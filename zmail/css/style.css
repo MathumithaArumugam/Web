@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+   background-color: rgba(0, 0, 0, 0.694);
+}
+
+.material-icons{
+    color:grey;
+}
+
+
+.header-left img{
+    object-fit: contain;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-left span{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.header-search{  
+    padding: 10px;
+    display: flex; 
+}
+.header-search span{
+    display: flex;
+}
+.header-search input{
+    display: flex;   
+}
+.header-search .icons{
+     padding: 15px;
+}
+
+.header-right{
+    display: flex;
+    padding: 10px;
+    
+}
+
+.sidebar{
+    height:100vh;
+    display: flex;
+    margin-left: 12px;
+}
+
+.sidebar-left button{
+    display: flex;
+    width: 38px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.mail{
+    background-color: #1849DA;
+}
+.calendar{
+    background-color: rgb(162, 77, 241);
+}
+.task{
+    background-color: aquamarine;
+}
+.notes{
+    background-color: rgba(243, 172, 86, 0.861);
+}
+.contacts{
+    background-color: rgb(246, 185, 71);
+}
+.bookmarks{
+    background-color:rgb(247, 13, 91);
+}
+
+.sidebar-left{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    cursor: pointer;
+    margin: 5px 0 0;
+    padding: 10px 0;
+    position: relative;
+    white-space: nowrap;
+    transition: opacity .2s linear;
+}
+
+.sidebar-left span{
+    padding: 5px;
+    display:block;
+}
+.sidebar-left a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    margin: 2px 2px 0;
+    overflow: hidden;
+    padding: 1px 0 0;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 5px 0 0;
+    padding: 10px 0;
+    position: relative;
+    white-space: nowrap;
+    transition: opacity .2s linear;
+}
+
+.sidebar-right{
+    margin: 2px;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+    padding-right: 30px;
+}
+
+.sidebar-compose{
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    background-color: #1849DA;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    justify-content: space-evenly;
+}
+.sidebar-compose span{
+    background-color: #1849DA;
+}
+
+.sidebar-streams{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+
+.sidebar-streams h3{
+    color: #1849DA;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sidebar-streams a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+}
+
+.sidebar-folders{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-right: 10px;
+    
+}
+.sidebar-folders h3{
+    color: #1849DA;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sidebar-folders a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+}
+
+.sidebar-tags{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-right: 10px;
+    
+ 
+}
+.sidebar-tags h3{
+    color: #1849DA;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sidebar-tags a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+}
+.main-body{
+    height: 100vh;
+    display: flex;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.zmaillist{
+    flex: 1;
+    overflow: scroll;
+}
+
+.zmaillist-settings{
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2px solid rgb(79, 77, 77);
+    z-index: 999;
+    padding: 8px;
+}
+
+.zmaillist-settingsLeft{
+    display:flex;
+    align-items: center;
+}
+.zmaillist-settings .material-icons{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.zmaillist-section{
+    color: rgba(139, 137, 137, 0.817);
+    margin-top: 10px;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.zmailRow-options{
+    display: flex;
+    align-items: center;
+}
+
+.zmailRow-options .material-icons, input{
+    margin: 5px;
+}
+
+.zmailRow{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    border-bottom: 0.4px solid rgb(79, 77, 77);
+    cursor: pointer;
+    z-index: 999;
+    color: rgba(139, 137, 137, 0.817);
+}
+.zmailRow:hover{
+    border-top: 1px solid rgb(79, 77, 77) ;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+
+.zmailRow-message{
+    display: flex;
+    flex: 0.8;
+   text-align: left;
+    font-size: 18px;
+}
+
+.zmailRow-message h4{
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.zmailRow-title{
+    font-size: 20px;
+    flex: 0.3;
+}
+
+.zmailRow-time{
+    
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
