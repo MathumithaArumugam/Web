@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 .material-icons{
-    color:grey;
+    color:rgba(245, 245, 245, 0.767);
 }
 
 
@@ -21,6 +22,7 @@
     color: whitesmoke;
     justify-content: space-between;
     background-color: #18191B;
+    height: 50px;
 }
 
 .header-left{
@@ -56,7 +58,7 @@
 }
 
 .sidebar{
-    gap: 15px;
+    gap: 12px;
     height:100vh;
     display: flex;
     padding: 10px;
@@ -66,28 +68,29 @@
 
 .sidebar-left button{
     display: flex;
-    width: 38px;
+    width: 30px;
+    height: 30px;
     align-items: center;
     border-radius: 5px;
 }
 
 .mail{
-    background-color: #1849DA;
+    background-color: #2778CC;
 }
 .calendar{
-    background-color: rgb(152, 55, 243);
+    background-color: #8F55CC;
 }
 .task{
-    background-color: rgb(111, 220, 184);
+    background-color: #1B8855;
 }
 .notes{
-    background-color: rgba(243, 172, 86, 0.861);
+    background-color:#B36F47 ;
 }
 .contacts{
-    background-color: rgb(246, 185, 71);
+    background-color: #B35C44;
 }
 .bookmarks{
-    background-color:rgb(247, 13, 91);
+    background-color:#CC3D55;
 }
 
 .sidebar-left{
@@ -99,16 +102,18 @@
     padding: 10px 0;
     position: relative;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 10px;
 }
 
 .sidebar-left span{
-    padding: 5px;
+    padding: 4px;
+    font-size: 18px;
+    
 }
 .sidebar-left a{
     text-decoration: none;
     color: aliceblue;
-    font-size: 15px;
+    font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
@@ -120,13 +125,14 @@
     display:flex;
     flex-direction: column;
     list-style: none;
-    font-size: 18px;
-    padding-right: 18px;
+    font-size: 15px;
+    padding-right: 15px;
 }
 
 .sidebar-compose{
     border-radius: 5px;
-    width: 200px;
+    width: 170px;
+    height: 40px;
     align-items: center;
     display: flex;
     background-color: #1849DA;
@@ -150,14 +156,14 @@
 .sidebar-streams h3{
     color: #1849DA;
     font-weight: bold;
-    margin: 20px;
+    margin: 15px;
 }
 
 .sidebar-streams a{
     color: whitesmoke;
     text-decoration: none;
     display: block;
-    margin: 20px;
+    margin: 15px;
 }
 
 .sidebar-folders{
@@ -170,14 +176,14 @@
 .sidebar-folders h3{
     color: #1849DA;
     font-weight: bold;
-    margin: 20px;
+    margin: 15px;
 }
 
 .sidebar-folders a{
     color: whitesmoke;
     text-decoration: none;
     display: block;
-    margin: 20px;
+    margin: 15px;
 }
 
 .sidebar-tags{
@@ -191,14 +197,14 @@
 .sidebar-tags h3{
     color: #1849DA;
     font-weight: bold;
-    margin: 20px;
+    margin: 15px;
 }
 
 .sidebar-tags a{
     color: whitesmoke;
     text-decoration: none;
     display: block;
-    margin: 20px;
+    margin: 15px;
 }
 .main-body{
     height: 100vh;
@@ -208,13 +214,13 @@
 body{
     height: 100vh;
     overflow-y: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .zmaillist{
     flex: 1;
     overflow: scroll;
-    padding: 10px;
-    
+    padding: 8px;
     background-color: #242628;
 }
 
@@ -238,16 +244,15 @@ body{
 }
 
 .zmaillist-section{
-    color: whitesmoke;
-    margin-top: 8px;
+    color: #BCBEC2;
+    margin-top: 5px;
     padding: 12px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #2D2F33;
 }
 .zmaillist-section h4{
     background-color: #2D2F33;
 }
-
 .zmailRow-options{
     display: flex;
     align-items: center;
@@ -260,19 +265,27 @@ body{
 .zmailRow{
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 65px;
     border-bottom: 0.4px solid rgb(79, 77, 77);
     cursor: pointer;
     z-index: 999;
-    color: rgba(139, 137, 137, 0.817);
+    color:rgba(244, 239, 239, 0.68);
+
+}
+.zmailRow:hover{
+    background-color: #1b1b1c9d;
 }
 
 
 .zmailRow-message{
     display: flex;
     flex: 0.8;
-   text-align: left;
-    font-size: 18px;
+    text-align: center;
+    font-size: 15px;
+    justify-content: space-between;
+    position: relative;
+    bottom: 30px;
+    padding-top: 10px;
 }
 
 .zmailRow-message h4{
@@ -285,13 +298,18 @@ body{
 }
 
 .zmailRow-title{
-    font-size: 20px;
+    font-size: 15px;
     flex: 0.3;
+    text-indent: 86px;
+    position: relative;
+    bottom: 25px;
 }
 
 .zmailRow-time{
+    display: flex;
     text-align: right;
-    padding-right: 15px;
+    justify-content: end;
+    margin-bottom: 15px;
     font-size: 13px;
     font-weight: bold;
 }
