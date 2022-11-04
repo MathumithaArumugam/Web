@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
     margin: 0;
-    padding: 0;
-   
+    padding: 0; 
 }
 
 .material-icons{
@@ -61,9 +60,28 @@
     position: relative;
     right: 300px;
     padding: 14px;
-    margin-top: 20px;
+    padding-top: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     width:90px;
     height:20px;
+}
+.header-corner::after{
+    display: block;
+    content:" ";
+    position: absolute;
+    transform:skewX(30deg);
+    -ms-transform:skewX(30deg);
+    -webkit-transform:skewX(30deg);
+    background-color:#242628;
+    background:#242628;
+    height: 30px;
+    top: 4px;
+    border-bottom: none;
+    border-left: none;
+    width: 20px;
+    right: -9px;
 }
 .sup-head span{
     padding: 3px;
@@ -72,7 +90,7 @@
 .sup-head button{
     width:20px;
     height:20px;
-  
+
 }
 .sup-head a{
     text-decoration: none;
@@ -80,10 +98,10 @@
     font-size: 12px;
 }
 .sub-head h5{
-      position: relative;
-      left: 10px;
-      font-size: 15px;
-      color: #BCBEC2;
+    position: relative;
+    left: 10px;
+    font-size: 15px;
+    color: #BCBEC2;
 }
 .sidebar{
     gap: 12px;
@@ -140,20 +158,22 @@
 }
 .sidebar-left a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.767);
     font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
     white-space: nowrap;
 }
-
+.sidebar-left a:hover{
+    color: whitesmoke;
+}
 .sidebar-right{
     margin: 2px;
     display:flex;
     flex-direction: column;
     list-style: none;
-    font-size: 15px;
+    font-size: 14px;
     padding-right: 15px;
 }
 
@@ -181,10 +201,16 @@
     padding-right: 10px;
 }
 
+.sidebar-streams a:hover{
+    background-color:#2D2F33;
+}
+
 .sidebar-streams h3{
     color: #1849DA;
     font-weight: bold;
     margin: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .sidebar-streams a{
@@ -195,8 +221,9 @@
     text-indent: 10px;
 }
 
+
 .sidebar-folders{
-    margin-top: 2px;
+    margin-top: -13px;
     margin-bottom: 2px;
     padding-top: 2px;
     padding-right: 10px;
@@ -206,6 +233,8 @@
     color: #1849DA;
     font-weight: bold;
     margin: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .sidebar-folders a{
@@ -215,9 +244,12 @@
     margin: 15px;
     text-indent: 10px;
 }
+.sidebar-folders a:hover{
+    background-color: #2D2F33;
+}
 
 .sidebar-tags{
-    margin-top: 2px;
+    margin-top:-13px;
     margin-bottom: 2px;
     padding-top: 2px;
     padding-right: 10px;
@@ -228,6 +260,8 @@
     color: #1849DA;
     font-weight: bold;
     margin: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .sidebar-tags a{
@@ -237,8 +271,8 @@
     margin: 15px;
     text-indent: 8px;
 }
-.sidebar-tags,input .checkbox{
-    color: #FFD700;
+.sidebar-tags a:hover{
+    background-color: #2D2F33;
 }
 
 .main-body{
@@ -318,6 +352,7 @@ body{
 }
 .zmailRow:hover{
     background-color: #2D2F33;
+    transition: transform 0.5s ease-in-out;
 }
 
 
