@@ -43,6 +43,10 @@
     padding-right: 10px;
     border-radius: 8px;
 }
+.header-middle span:hover{
+    border-radius: 60%;
+    background-color: #E8EAED;
+}
 .material-icons{
     color: rgba(0, 0, 0, 0.587);
 }
@@ -144,6 +148,7 @@
 .main-body{
     display: flex;
     height: 100vh;
+    width: 100vw;
 }
 .body{
     height: 100vh;
