@@ -50,6 +50,10 @@
 .material-icons{
     color: rgba(0, 0, 0, 0.587);
 }
+.material-icons:hover{
+    border-radius: 50%;
+    background-color: #E8EAED;
+}
 .header-middle input{
     border: none;
     width:100%;
@@ -193,7 +197,7 @@
     display: flex;
     align-items: center;
     height: 50px;
-    width: 185%;
+    width: 160%;
     border-bottom: 1px solid whitesmoke;
     cursor: pointer;
     z-index: 999;
