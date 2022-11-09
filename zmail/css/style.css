@@ -39,12 +39,16 @@
 .header-search{  
     padding: 10px;
     display: flex; 
+    background-color: rgb(61,63,67);
+    border-radius: 15px;
 }
 .header-search span{
     display: flex;
 }
 .header-search input{
     display: flex;   
+    background-color: inherit;
+    border: none;
 }
 .header-search .icons{
      padding: 15px;
