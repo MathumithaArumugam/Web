@@ -533,6 +533,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .single-profile {
     position: relative;
+    left:450px;
     height: 150px;
     display: flex;
     justify-content: center;
