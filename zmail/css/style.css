@@ -41,6 +41,7 @@
     display: flex; 
     background-color: rgb(61,63,67);
     border-radius: 15px;
+    margin-right: 20px;
 }
 .header-search span{
     display: flex;
