@@ -366,7 +366,7 @@ body{
     font-weight:lighter;
 }
 .active{
-    border-left: 2px solid ;
+    border-left: 3px solid ;
     border-left-color: #2778CC;
 }
 .zmailRow:hover{
