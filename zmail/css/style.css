@@ -54,6 +54,7 @@
     padding: 6px;
     background-color: inherit;
     border: none;
+    outline: none;
 }
 .header-icons{
     display: flex;
