@@ -355,7 +355,6 @@ body{
     margin: 5px;
     font-size: 15px;
 }
-
 .zmailRow{
     display: flex;
     flex-direction: column;
@@ -365,6 +364,10 @@ body{
     z-index: 999;
     color:#BCBEC2;
     font-weight:lighter;
+}
+.active{
+    border-left: 2px solid ;
+    border-left-color: #2778CC;
 }
 .zmailRow:hover{
     background-color: #2D2F33;
