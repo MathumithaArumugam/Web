@@ -335,7 +335,7 @@ body{
 
 .zmaillist-section{
     color: #BCBEC2;
-    margin-top: 5px;
+    margin-top: 5px 0;
     padding: 10px;
     font-size: 14px;
     font-weight:lighter;
