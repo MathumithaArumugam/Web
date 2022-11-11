@@ -601,7 +601,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     border:  1px solid #e5ebf2;
 }
 
-.portfolio-content {padding-top: 100px;}
+.portfolio-content {padding-top: 100px;
+margin-left: 300px;}
 
 /* ---- .item ---- */
 .isotope:after {
@@ -613,6 +614,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     position:relative;
     overflow:hidden;
     margin-bottom: 30px;
+    height: 150%;
+    width:150%;
 }
 /*.item img*/
 .isotope .item img{
